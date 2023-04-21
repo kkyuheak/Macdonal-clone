@@ -1,6 +1,14 @@
 /* common */
+body {
+  height: 3000px;
+}
+
 a {
   text-decoration: none;
+  display: block;
+}
+
+img {
   display: block;
 }
 
@@ -93,4 +101,38 @@ header .inner {
 .search_icon {
   font-size: 35px;
   margin-left: 25px;
+}
+
+/* slide section */
+
+.slide_images {
+  position: relative;
+  width: 1920px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.slide .swiper-prev,
+.slide .swiper-next {
+  font-size: 60px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 90px;
+  height: 90px;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.slide .swiper-prev {
+  left: 313px;
+}
+
+.slide .swiper-next {
+  right: 313px;
 }
