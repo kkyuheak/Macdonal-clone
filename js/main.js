@@ -27,6 +27,11 @@ hiddenMenu.addEventListener("mouseover", () => {
   header.style.borderColor = "rgba(0,0,0,0.2)";
 });
 
+headerMenu.addEventListener("mouseout", () => {
+  hiddenMenu.style.display = "none";
+  header.style.borderColor = "#ffbc0d";
+});
+
 hiddenMenu.addEventListener("mouseout", () => {
   hiddenMenu.style.display = "none";
   header.style.borderColor = "#ffbc0d";

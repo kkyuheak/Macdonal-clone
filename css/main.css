@@ -22,8 +22,10 @@ header {
   width: 100%;
   height: 140px;
   /* background-color: royalblue; */
-  position: relative;
+  position: fixed;
   border-bottom: 1px solid #ffbc0d;
+  z-index: 3;
+  background-color: #fff;
 }
 
 header .inner {
@@ -106,9 +108,10 @@ header .inner {
 .hidden_menu {
   background-color: #fff;
   border-bottom: 1px solid #ffbc0d;
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 350px;
+  top: 140px;
   padding-top: 30px;
   z-index: 2;
   display: none;
@@ -161,6 +164,7 @@ header .inner {
   left: 0;
   right: 0;
   margin: 0 auto;
+  top: 140px;
 }
 
 .slide .swiper-prev,
