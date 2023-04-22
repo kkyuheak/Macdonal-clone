@@ -38,8 +38,7 @@ header .inner {
 
 .header_menu {
   display: flex;
-  background-color: white;
-  margin-left: 50px;
+  margin-left: 60px;
 }
 
 .header_menu li {
@@ -103,6 +102,57 @@ header .inner {
   margin-left: 25px;
 }
 
+/* hidden_menu */
+.hidden_menu {
+  background-color: #fff;
+  border-bottom: 1px solid #ffbc0d;
+  position: absolute;
+  width: 100%;
+  height: 350px;
+  padding-top: 30px;
+  z-index: 2;
+  display: none;
+}
+
+.hidden_menu-list {
+  display: flex;
+  width: 670px;
+  position: absolute;
+  left: 0;
+  right: 165px;
+  margin: 0 auto;
+}
+
+.hidden_menu-menu {
+  margin-right: 30px;
+}
+
+.hidden_menu-store {
+  margin-right: 65px;
+}
+
+.hidden_menu-new {
+  margin-right: 100px;
+}
+
+.hidden_menu-list ul li {
+  padding: 15px 10px;
+}
+
+.hidden_menu-list ul li a {
+  color: grey;
+  font-weight: 500;
+}
+
+.hidden_menu-list ul li a:hover {
+  color: #292929;
+  text-decoration: underline;
+}
+
+/* .hidden_menu:hover {
+  display: block;
+} */
+
 /* slide section */
 
 .slide_images {
@@ -130,9 +180,24 @@ header .inner {
 }
 
 .slide .swiper-prev {
-  left: 313px;
+  left: 0;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
 
 .slide .swiper-next {
-  right: 313px;
+  right: 0;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.prev-icon,
+.next-icon {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 25px;
+  bottom: 0;
+  margin: auto 0;
 }
