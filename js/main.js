@@ -67,3 +67,22 @@ moreBtn.addEventListener("click", () => {
   hiddenCards.style.display = "flex";
   moreBtn.style.display = "none";
 });
+
+//top_btn 버튼 누를 때 페이지 상단 이동
+
+const topBtn = document.querySelector(".top_btn");
+
+topBtn.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+//fixedbtn하단 내려올때 포지션 fixed 해제
+
+const fixBtn = document.querySelector(".fixed_btns");
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 1120) {
+    fixBtn.style.position = "absolute";
+  } else {
+    fixBtn.style.position = "fixed";
+  }
+});
