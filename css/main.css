@@ -272,6 +272,8 @@ header .inner {
   cursor: pointer;
 }
 
+/* fixed_btn */
+
 .fixed_img_1 a {
   background-image: url("../img/fixedimg1.png");
   background-repeat: no-repeat;
@@ -300,12 +302,14 @@ header .inner {
 }
 .fixed_btn {
   position: relative;
+  width: 100%;
 }
 
 .fixed_btns {
   position: fixed;
-  right: 20px;
-  bottom: 50px;
+  bottom: 90px;
+  left: 49%;
+  margin: 0 0 0 635px;
   z-index: 4;
 }
 

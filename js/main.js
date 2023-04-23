@@ -80,7 +80,7 @@ topBtn.addEventListener("click", () => {
 
 const fixBtn = document.querySelector(".fixed_btns");
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 1120) {
+  if (window.scrollY > 640) {
     fixBtn.style.position = "absolute";
   } else {
     fixBtn.style.position = "fixed";
