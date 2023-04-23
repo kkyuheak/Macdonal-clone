@@ -57,3 +57,13 @@ window.addEventListener("scroll", () => {
     hiddenMenuList.style.right = "165px";
   }
 });
+
+//더보기 버튼
+
+const moreBtn = document.querySelector(".more_btn");
+const hiddenCards = document.querySelector(".hidden_cards");
+
+moreBtn.addEventListener("click", () => {
+  hiddenCards.style.display = "flex";
+  moreBtn.style.display = "none";
+});
