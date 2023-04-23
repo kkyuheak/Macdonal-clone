@@ -26,6 +26,7 @@ header {
   border-bottom: 1px solid #ffbc0d;
   z-index: 3;
   background-color: #fff;
+  transition: all 1s;
 }
 
 header .inner {
@@ -115,6 +116,7 @@ header .inner {
   padding-top: 30px;
   z-index: 2;
   display: none;
+  transition: all 1s;
 }
 
 .hidden_menu-list {
@@ -124,6 +126,7 @@ header .inner {
   left: 0;
   right: 165px;
   margin: 0 auto;
+  transition: all 1s;
 }
 
 .hidden_menu-menu {
@@ -151,10 +154,6 @@ header .inner {
   color: #292929;
   text-decoration: underline;
 }
-
-/* .hidden_menu:hover {
-  display: block;
-} */
 
 /* slide section */
 
